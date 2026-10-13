@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="毛絨絨繩先生的個人介紹檔案：暗黑奇幻料理名家、好友刺次、修狗、歐鷗、喜歡的音樂與戰績復活全紀錄。">
+    <title>毛絨絨繩先生的自我介紹</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Outfit:wght@400;600;800;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- 主樣式表 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 頂部懸浮導航欄 (Tab 切換控制) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#profile" class="nav-brand" data-tab-target="profile">
+                <img src="img/sketch1788281495258.png" alt="繩先生頭像" class="nav-avatar">
+                <span>繩先生の個人檔案</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#profile" class="nav-link active" data-tab="profile">個人簡介</a></li>
+                <li><a href="#music" class="nav-link" data-tab="music">喜歡的歌</a></li>
+                <li><a href="#friends" class="nav-link" data-tab="friends">好朋友</a></li>
+                <li><a href="#battles" class="nav-link" data-tab="battles">狩獵戰績</a></li>
+                <li><a href="#rebirth" class="nav-link" data-tab="rebirth">復活日常</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- ==================== 1. 個人簡介 (Hero Profile Tab) ==================== -->
+        <section id="profile" class="tab-pane profile-section active">
+            <div class="profile-card">
+                <!-- 左側證件照 -->
+                <div class="profile-avatar-wrapper">
+                    <div class="avatar-frame" data-zoomable data-caption="毛絨絨繩先生證件照">
+                        <img src="img/sk2.JPG" alt="繩先生證件照" class="avatar-img">
+                        <div class="avatar-badge">
+                            <span class="status-dot"></span>
+                            <span>飢餓狀態・隨時可開動</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右側檔案資訊 -->
+                <div class="profile-content">
+                    <div class="profile-tag-group">
+                        <span class="profile-tag highlight">毛絨絨狗勾</span>
+                        <span class="profile-tag">暗黑料理專家</span>
+                        <span class="profile-tag">極度愛貼貼</span>
+                        <span class="profile-tag">危險等級 ★★★★★</span>
+                    </div>
+
+                    <h1 class="profile-name">毛絨絨繩先生</h1>
+                    <p class="profile-subtitle">Mr. Rope ・ 擁有可愛大尾巴與奇妙料理熱忱的特異個體</p>
+
+                    <!-- 代表名言 -->
+                    <div class="profile-quote-card">
+                        <div class="quote-label">SIGNATURE QUOTE ／ 代表的一句話</div>
+                        <p class="quote-text">「你看起來很美味，借我吃一口，就一口！」🍴🩸</p>
+                    </div>
+
+                    <!-- 詳細屬性網格 -->
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-key">🏷️ 名字</div>
+                            <div class="info-val">繩先生 (Mr. Rope)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-key">🍳 專長</div>
+                            <div class="info-val">極致料理、肢解烹飪</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-key">🧵 興趣</div>
+                            <div class="info-val">製作繩子、烹飪料理、跟朋友貼貼</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-key">👥 親密夥伴</div>
+                            <div class="info-val">刺次、修狗、歐鷗</div>
+                        </div>
+                    </div>
+
+                    <!-- 互動按鈕 -->
+                    <div class="profile-actions">
+                        <button id="bite-btn" class="btn-primary" type="button">
+                            <span>讓繩先生咬一口 🩸</span>
+                        </button>
+                        <a href="#music" class="btn-secondary" data-tab-target="music">
+                            <span>聽聽喜歡的歌 🎵</span>
+                        </a>
+                        <a href="#battles" class="btn-secondary" data-tab-target="battles">
+                            <span>查看戰績畫廊 🎨</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁導覽按鈕 -->
+            <div class="tab-pagination single-next">
+                <button class="tab-nav-btn next" data-tab-target="music" type="button">
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往下一分類</span>
+                        <span class="tab-nav-title">喜歡的歌 🎧</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ==================== 2. 喜歡的歌 (Music Tab) ==================== -->
+        <section id="music" class="tab-pane music-section">
+            <div class="section-header">
+                <span class="section-tag">FAVORITE TRACK</span>
+                <h2 class="section-title">聽聽毛絨絨繩先生喜歡的歌吧！ 🎧</h2>
+                <p class="section-desc">節奏輕快、氛圍強烈的狂宴樂曲，料理與狩獵時的最佳伴奏</p>
+            </div>
+
+            <div class="music-card">
+                <div class="music-layout">
+                    <!-- 左側歌曲資訊 -->
+                    <div class="music-info">
+                        <div class="music-badge">🔥 ON REPEAT</div>
+                        <h3 class="song-title">BUTCHER VANITY</h3>
+                        <p class="song-artist">重音テト (Kasane Teto)</p>
+                        <p class="song-description">
+                            充滿魔性旋律與詭譎氛圍的名曲，呼應著對「美味」與「肢解藝術」的執著，每次開火煮飯都必須循環播放！
+                        </p>
+
+                        <!-- 動態音波條 -->
+                        <div class="audio-waves">
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                            <div class="wave-bar"></div>
+                        </div>
+
+                        <div>
+                            <a href="https://youtu.be/pZ1QcgbioxI?si=tYN-3HGF7QhJeGGw" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary" style="display: inline-flex;">
+                                <span>在 YouTube 上開啟原曲 ↗</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 右側嵌入影片播放器 -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube-nocookie.com/embed/pZ1QcgbioxI" title="BUTCHER VANITY / 重音テト"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁導覽按鈕 -->
+            <div class="tab-pagination">
+                <button class="tab-nav-btn prev" data-tab-target="profile" type="button">
+                    <span class="btn-arrow">←</span>
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往上一分類</span>
+                        <span class="tab-nav-title">個人簡介 🏷️</span>
+                    </div>
+                </button>
+                <button class="tab-nav-btn next" data-tab-target="friends" type="button">
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往下一分類</span>
+                        <span class="tab-nav-title">好朋友貼貼 💖</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ==================== 3. 好朋友 (Best Friends Tab) ==================== -->
+        <section id="friends" class="tab-pane friends-section">
+            <div class="section-header">
+                <span class="section-tag">COMPANIONS</span>
+                <h2 class="section-title">好朋友貼貼名單 💖</h2>
+                <p class="section-desc">無論是狩獵、下廚還是發呆，都有最重要的夥伴們相伴</p>
+            </div>
+
+            <div class="friends-grid">
+                <!-- 刺次 -->
+                <div class="friend-card" data-zoomable data-caption="好友：刺次 (溫柔大姊姊)">
+                    <div class="friend-img-box">
+                        <img src="img/sk1.jpg" alt="刺次證件照" class="friend-img">
+                    </div>
+                    <div class="friend-body">
+                        <span class="friend-role-badge badge-cici">💉 醫用利刃大廚</span>
+                        <h3 class="friend-name">刺次</h3>
+                        <p class="friend-desc">
+                            擁有黑色觸角與靈巧多手的溫柔大姊姊，也是個吃貨，常常和繩先生一起在鍋爐前烹煮特殊美味！
+                        </p>
+                        <div class="friend-tags">
+                            <span class="friend-tag">#昆蟲系</span>
+                            <span class="friend-tag">#料理夥伴</span>
+                            <span class="friend-tag">#烤肉中秋</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 修狗 -->
+                <div class="friend-card" data-zoomable data-caption="好友：修狗 (符文藍袍修士)">
+                    <div class="friend-img-box">
+                        <img src="img/sk4.jpeg" alt="修狗證件照" class="friend-img">
+                    </div>
+                    <div class="friend-body">
+                        <span class="friend-role-badge badge-xiou">📜 符文修道犬</span>
+                        <h3 class="friend-name">修狗</h3>
+                        <p class="friend-desc">
+                            頭戴十字符咒布簾、身著藍袍的沉穩狗狗夥伴。性格溫柔包容，是混亂冒險中讓人安心的存在。
+                        </p>
+                        <div class="friend-tags">
+                            <span class="friend-tag">#犬系</span>
+                            <span class="friend-tag">#治癒之風</span>
+                            <span class="friend-tag">#深藍長袍</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 歐鷗 -->
+                <div class="friend-card" data-zoomable data-caption="好友：歐鷗 (灰羽巡空夥伴)">
+                    <div class="friend-img-box">
+                        <img src="img/sk3.jpeg" alt="歐鷗證件照" class="friend-img">
+                    </div>
+                    <div class="friend-body">
+                        <span class="friend-role-badge badge-ou">🪶 灰羽空行者</span>
+                        <h3 class="friend-name">歐鷗</h3>
+                        <p class="friend-desc">
+                            羽翼豐滿且眼神冷冽的飛鳥系夥伴，雙腿有力、機敏靈活，時常在高處警戒並隨時俯衝貼貼。
+                        </p>
+                        <div class="friend-tags">
+                            <span class="friend-tag">#飛鳥系</span>
+                            <span class="friend-tag">#高空偵查</span>
+                            <span class="friend-tag">#面具羽毛</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁導覽按鈕 -->
+            <div class="tab-pagination">
+                <button class="tab-nav-btn prev" data-tab-target="music" type="button">
+                    <span class="btn-arrow">←</span>
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往上一分類</span>
+                        <span class="tab-nav-title">喜歡的歌 🎧</span>
+                    </div>
+                </button>
+                <button class="tab-nav-btn next" data-tab-target="battles" type="button">
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往下一分類</span>
+                        <span class="tab-nav-title">狩獵戰績 ⚔️</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ==================== 4. 戰績 (Combat Archives Tab) ==================== -->
+        <section id="battles" class="tab-pane gallery-section">
+            <div class="section-header">
+                <span class="section-tag">FEAST ARCHIVE</span>
+                <h2 class="section-title">狩獵與戰績全紀錄 ⚔️</h2>
+                <p class="section-desc">每一場激戰都是為了獲取最頂級的食材，點擊圖片可放大欣賞高清畫作</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- 01 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #01：林間盛宴與撒鹽時刻">
+                    <img src="img/01.jpeg" alt="戰績 01" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #01</span>
+                        <h4 class="gallery-item-title">林間鮮味</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #02：血月下的迅猛撕咬">
+                    <img src="img/02.jpeg" alt="戰績 02" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #02</span>
+                        <h4 class="gallery-item-title">迅捷狩獵</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #03：蛛絲縛足與困獸反撲">
+                    <img src="img/03.jpeg" alt="戰績 03" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #03</span>
+                        <h4 class="gallery-item-title">絲線交錯</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #04：暗夜凝視與殘肢喘息">
+                    <img src="img/04.jpeg" alt="戰績 04" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #04</span>
+                        <h4 class="gallery-item-title">暗夜凝望</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+
+                <!-- 05 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #05：藤蔓纏繞與終局撲殺">
+                    <img src="img/05.jpeg" alt="戰績 05" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #05</span>
+                        <h4 class="gallery-item-title">藤蔓深淵</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+
+                <!-- 06 -->
+                <div class="gallery-item" data-zoomable data-caption="戰績 #06：草地小憩與夜宵暢想">
+                    <img src="img/06.jpg" alt="戰績 06" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-idx">RECORD #06</span>
+                        <h4 class="gallery-item-title">篝火歸途</h4>
+                        <span class="gallery-hint">🔍 點擊放大檢視</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁導覽按鈕 -->
+            <div class="tab-pagination">
+                <button class="tab-nav-btn prev" data-tab-target="friends" type="button">
+                    <span class="btn-arrow">←</span>
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往上一分類</span>
+                        <span class="tab-nav-title">好朋友貼貼 💖</span>
+                    </div>
+                </button>
+                <button class="tab-nav-btn next" data-tab-target="rebirth" type="button">
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往下一分類</span>
+                        <span class="tab-nav-title">復活日常 🌕</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- ==================== 5. 復活 (Rebirth Tab) ==================== -->
+        <section id="rebirth" class="tab-pane rebirth-section">
+            <div class="section-header">
+                <span class="section-tag">REBIRTH CHRONICLE</span>
+                <h2 class="section-title">重創與復活之詩 🌕</h2>
+                <p class="section-desc">縱使殘破不堪，也能在至高喜悅與夥伴的陪伴下重新站起</p>
+            </div>
+
+            <div class="rebirth-grid">
+                <!-- 1.jpeg -->
+                <div class="rebirth-card" data-zoomable data-caption="復活篇章 #01：至高喜悅 (即便肢體斷裂，靈魂亦無比狂熱)">
+                    <div class="rebirth-img-box">
+                        <img src="img/1.jpeg" alt="復活 01 至高喜悅" class="rebirth-img" loading="lazy">
+                    </div>
+                    <div class="rebirth-body">
+                        <div class="rebirth-step">STAGE 01 ・ CRITICAL</div>
+                        <h3 class="rebirth-title">至高喜悅</h3>
+                        <p class="rebirth-desc">
+                            戰鬥到殘缺邊緣的繩先生，在斷肢與狂熱的血液中品味著生命極致的激昂。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2.jpg -->
+                <div class="rebirth-card" data-zoomable data-caption="復活篇章 #02：-1HP 中秋烤肉四格漫畫 (刺次：肉香～)">
+                    <div class="rebirth-img-box">
+                        <img src="img/2.jpg" alt="復活 02 中秋烤肉四格" class="rebirth-img" loading="lazy">
+                    </div>
+                    <div class="rebirth-body">
+                        <div class="rebirth-step">STAGE 02 ・ RECOVERY</div>
+                        <h3 class="rebirth-title">中秋烤肉 -1HP</h3>
+                        <p class="rebirth-desc">
+                            被咬下一小塊也無妨！刺次把掉落物放在烤網上烤得滋滋作響，充滿歡笑的中秋治癒日常。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3.jpg -->
+                <div class="rebirth-card" data-zoomable data-caption="復活篇章 #03：月夜歡聚 (在月光與大家注視下滿血回歸！)">
+                    <div class="rebirth-img-box">
+                        <img src="img/3.jpg" alt="復活 03 月夜歡聚" class="rebirth-img" loading="lazy">
+                    </div>
+                    <div class="rebirth-body">
+                        <div class="rebirth-step">STAGE 03 ・ REBORN</div>
+                        <h3 class="rebirth-title">月下大復活</h3>
+                        <p class="rebirth-desc">
+                            滿月昇起之時，擦去眼淚與血跡，繩先生再次在眾人簇擁中滿血復活、元氣比讚！
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分頁導覽按鈕 -->
+            <div class="tab-pagination">
+                <button class="tab-nav-btn prev" data-tab-target="battles" type="button">
+                    <span class="btn-arrow">←</span>
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">前往上一分類</span>
+                        <span class="tab-nav-title">狩獵戰績 ⚔️</span>
+                    </div>
+                </button>
+                <button class="tab-nav-btn next" data-tab-target="profile" type="button">
+                    <div class="tab-nav-text">
+                        <span class="tab-nav-sub">回到首頁起點</span>
+                        <span class="tab-nav-title">個人簡介 🏷️</span>
+                    </div>
+                    <span class="btn-arrow">↺</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 圖片點擊放大燈箱 (Lightbox Modal) -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="圖片檢視器">
+        <div class="lightbox-content">
+            <button id="lightbox-close" class="lightbox-close" aria-label="關閉放大檢視">×</button>
+            <img id="lightbox-img" class="lightbox-img" src="" alt="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-quote">「今天也是想跟朋友貼貼、品嚐新美味的一天！」</p>
+            <div class="footer-warning">⚠️ 溫馨提醒：請勿將手指靠近螢幕，繩先生真的會咬一口喔！</div>
+            <p class="footer-copy">© 繩先生的奇妙個人檔案 | 網頁設計 001 作業</p>
+        </div>
+    </footer>
+
+    <!-- 主腳本 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
